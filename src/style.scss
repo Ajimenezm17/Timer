@@ -1,0 +1,52 @@
+
+$primary-color: #4a90e2;
+$secondary-color: #50e3c2;
+$background-color: #f0f4f8;
+$text-color: #333;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: $background-color;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#timer-container {
+  background: linear-gradient(to bottom right, $primary-color, $secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+
+  #timer-display {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: white;
+    color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}

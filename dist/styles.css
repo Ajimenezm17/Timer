@@ -1,0 +1,44 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+body {
+  font-family: "Arial", sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#timer-container {
+  background: linear-gradient(to bottom right, #4a90e2, #50e3c2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#timer-container #timer-display {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
+#timer-container button {
+  background-color: white;
+  color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#timer-container button:hover {
+  background-color: #4a90e2;
+  color: white;
+  transform: translateY(-2px);
+}
+#timer-container button:active {
+  transform: translateY(1px);
+}

@@ -28,11 +28,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css', 
-    }),
+        filename: 'styles.css', // Esto generará un archivo styles.css en lugar de tenerlo embebido
+      }),
   ],
-  devServer: {
-    static: path.resolve(__dirname, 'dist'), 
-  },
   mode: 'development',
 };
