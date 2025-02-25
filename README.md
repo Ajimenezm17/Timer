@@ -6,7 +6,7 @@ Proyecto de Cliente en el que realizamos un Timer añadiendo todo lo solicitado 
 
 **Git**
 
-**npm**
+**npm(node)**
 
 **webpack(bundler)**
 
